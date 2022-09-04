@@ -90,21 +90,21 @@ let container = [
     {
         id :0,
         prise : "$85.00" ,
-        name : "HOLDING GEAR",
+        name : "قابض العتاد",
         imgSrc :"img/product1-730x730.jpg"
 
     },
     {
         id :1,
         prise : "$470.00" ,
-        name : "PRO-DIVE SCUBA TANK",
+        name : "خزان غوص بالهواء المفتوح",
         imgSrc :"img/product4-730x730.jpg"
 
     },
     {
         id :2,
         prise : "$350.00" ,
-        name : "SCUBA DIVING",
+        name : "الغوص",
         imgSrc :"img/product2-730x730.jpg"
 
     }

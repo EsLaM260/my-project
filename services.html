@@ -13,6 +13,17 @@
 </head>
 <body>
 
+    <!-- loading -->
+
+<div class="ringback" id="loading">
+  <div class="ring" >
+    loading
+    <span></span>
+  </div>
+</div>
+
+
+
   <!-- fixed -->
   <div class="fix" id="fix">
     <a href="#">
@@ -25,21 +36,9 @@
   <div class="fix2" id="fix2">
     <div class="container1">
       <ul>
-        <li>
-          <a href="https://themeforest.net/checkout/87317668/create_account?clickid=3%3ACUAfSMexyIRukTHlSCwSkLUkDwKwSRvzeK1Y0&iradid=275988&iradtype=ONLINE_TRACKING_LINK&irgwc=1&irmptype=mediapartner&irpid=1262870&mp_value1=&utm_campaign=af_impact_radius_1262870&utm_medium=affiliate&utm_source=impact_radius" target="_blank">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </a>
-          <div class="hover">Buy theme</div>
-        </li>
         <li id="sideBar">
           <i class="fa-solid fa-images"></i>
           <div class="hover">Our Bestshellers</div>
-        </li>
-        <li>
-          <a href="index.html" target="_blank">
-            <i class="fa-solid fa-folder-closed"></i>
-          </a>
-          <div class="hover">Hide panel</div>
         </li>
       </ul>
     </div>
@@ -133,15 +132,16 @@
             <input id="inputSeach" type="text" placeholder="search">
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0" id="form-inline">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span>YOUR CART (0)</span>
-              <div class="card">
-                
-              </div>
-            </button>
-          </form>
+          <button class="btn ">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>YOUR CART</span>
+            <div class="card1 product_show" id="product_show">
+
+
+
+
+            </div>
+          </button>
         </div>
       </nav>
     </div>
@@ -493,7 +493,7 @@
 
 
   <!-- js -->
-  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>

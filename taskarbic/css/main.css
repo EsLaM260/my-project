@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+    direction: rtl;
+}
 img{
     width: 100%;
 }
@@ -331,16 +334,16 @@ header{
     /* padding: 7px 0; */
 }
 
-
-
-
-
+.navbar-brand{
+    margin-right: 0;
+    margin-left: 1rem;
+}
 
 header .navbar{
     padding: 0;
 }
 header ul{
-    margin: 0 15px 0 50px ;
+    margin: 0 50px 0 15px ;
 }
 header ul li{
     padding: 25px 7px;
@@ -538,6 +541,9 @@ header #inputSeach{
     z-index: 1;
 }
 
+.sec1 .text{
+    text-align: right;
+}
 
 
 /* sectkion 2 */
@@ -585,7 +591,7 @@ header #inputSeach{
 }
 
 .LOVE_IT .col-lg-4{
-    padding-right: 0;
+    padding-left: 0;
 }
 .LOVE_IT .col-lg-4 .text{
     background-color: #20c7ca;
@@ -616,8 +622,8 @@ header #inputSeach{
 
 
 .LOVE_IT .col-lg-8{
-    padding-left: 0;
-    padding-right: 70px;
+    padding-left: 70px;
+    padding-right: 0px;
 }
 
 .LOVE_IT .right .text{
@@ -664,8 +670,6 @@ header #inputSeach{
 
 /* section 4 */
 
-
-
 .DONT_MISS{
     background-image: url(../img/bg_home.jpg);
     height: 100vh;
@@ -675,7 +679,9 @@ header #inputSeach{
     display: flex;
     align-items: center;
 }
-
+.DONT_MISS .text{
+    text-align: right;
+}
 .DONT_MISS h2{
     font-size: 4.2856em;
     color: #fff;
@@ -718,7 +724,8 @@ header #inputSeach{
 
 
 .RECENT .col-lg-4{
-    padding-right: 0;
+    padding-left: 0;
+    text-align: right;
 }
 .RECENT .col-lg-4 .text{
     background-color: #008ae2;
@@ -808,7 +815,7 @@ header #inputSeach{
 
 
 .RECENT .pad{
-    padding-right: 60px;
+    padding-left: 60px;
 }
 
 
@@ -827,16 +834,20 @@ header #inputSeach{
     overflow: hidden;
 }
 
+.DREAM .text , .text2{
+    text-align: right;
 
+}
 
 
 .DREAM .col-lg-4{
-    padding-right: 0;
+    padding-left: 0;
 }
 .DREAM .col-lg-4 .text{
     background-color: #20c7ca;
     padding: 70px 39px;
     position: relative;
+    text-align: right   ;
 }
 
 .DREAM .col-lg-4 h2{
@@ -890,7 +901,7 @@ header #inputSeach{
 }
 
 .DREAM .right{
-    padding-right: 90px;
+    padding-left: 90px;
 }
 
 
@@ -958,10 +969,6 @@ header #inputSeach{
     border-radius: 50%;
 }
 
-
-
-
-
 .CLIENTS .nexts{
     position: absolute;
     right: -112px;
@@ -1007,9 +1014,12 @@ header #inputSeach{
     margin-bottom: 80px;
     
 }
+.SHOP .text{
+    text-align: right;
+}
 
 .SHOP .col-lg-4{
-    padding-right: 0;
+    padding-left: 0;
 }
 .SHOP .col-lg-4 .text{
     background-color: #008ae2;
@@ -1041,6 +1051,7 @@ header #inputSeach{
 .SHOP .text2{
     padding: 30px;
     margin-top: 50px;
+    text-align: right;
 
 }
 .SHOP .text2 p{
@@ -1091,25 +1102,21 @@ header #inputSeach{
 }
 
 .SHOP .right{
-    padding-right: 80px;
+    padding-left: 80px;
 }
-
-
-
 
 /* footer */
 
 footer{
     background-color: #232a34;
     overflow: hidden;
+    text-align: right;
 }
 
 footer .col-lg-2{
     padding: 0;
     margin: 40px 0;
 }
-
-
 footer  h2{
     color: #fff;
     font-size: 65px;
@@ -1117,9 +1124,6 @@ footer  h2{
     text-align: center;
     padding: 40px 0;
 }
-
-
-
 footer .photo{
     position: relative;
 }
@@ -1186,7 +1190,7 @@ footer .fotBottom .eslam{
 
 footer .fotBottom h2{
     font-size: 30px;
-    text-align: left;
+    text-align: right;
     padding: 20px 0;
     font-weight: 700;
 }
@@ -1238,7 +1242,7 @@ footer input:focus-visible{
 
 footer .Email span{
     position: absolute;
-    right: 50px;
+    left: 50px;
     top: 20px;
     color: #fff;
     cursor: pointer;
@@ -1645,6 +1649,7 @@ footer .lastText p span:hover{
     color: #fff;
     padding: 10px 20px;
     margin: 0;
+    width: 100%;
     text-align: center;
     transform-origin: 50% 100%;
     transform-style:flat ;
@@ -1701,6 +1706,7 @@ footer .lastText p span:hover{
 }
 .eventPageSEec1 .text{
     padding: 10px 30px;
+    text-align: right;
 }
 
 .eventPageSEec1 h2{
@@ -1812,7 +1818,9 @@ footer .lastText p span:hover{
 .blogPage .text{
     padding: 30px 30px ;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: right;
 }
+
 
 .blogPage .photo .photoPad{
     position: relative;
@@ -1883,6 +1891,9 @@ footer .lastText p span:hover{
     padding: 30px 20px;
 }
 
+.blogPage .text20{
+    padding: 30px 0 !important;
+}
 
 .blogPage .pad .text h2{
     color: #fff;
@@ -1922,7 +1933,7 @@ footer .lastText p span:hover{
 .blogPage .pad .text form span{
     color: #fff;
     position: absolute;
-    right: 13px;
+    left: 13px;
     top: 10px;
     transition: all 0.3s;
 }
@@ -1974,12 +1985,18 @@ footer .lastText p span:hover{
 .iframe iframe{
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 /* section 2 */
 
+.contctUsPage{
+    overflow: hidden;
+}
+
 .contctUsPage .col-lg-4{
     padding-right: 0;
+    text-align: right;
 }
 .contctUsPage .col-lg-4 .text{
     background-color: #008ae2;
